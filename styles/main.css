@@ -3,10 +3,6 @@ body {
   font-family: Muli;
 }
 
-.container {
-  width: 100%;
-}
-
 header {
   background: url(../images/hero-image.jpg) center/cover;
   height: 100vh;
