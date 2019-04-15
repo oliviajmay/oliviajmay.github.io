@@ -4,6 +4,9 @@
     <title>Portfolio | Olivia May</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Style Reset-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
     <!-- Google Fonts -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Philosopher" />
 
@@ -15,59 +18,61 @@
   </head>
 
   <body>
-    <header>
-      <ul class="nav">
-        <li style="float:left"><a class="logo">OLIVIA J MAY</a></li>
-        <li><a>PROJECTS</a></li>
-        <li><a>ABOUT</a></li>
-        <li><a>CONTACT</a></li>
-      </ul>
-      <section class="intro-box">
-        <h1>Hi, I'm Olivia May</h1>
-        <p class="slogan">I am a UX Designer based in San Francisco. Professionally, I create interactive experiences;  personally, I create adventurous ones.</p>
-        <button class="btn default">LET'S CHAT!</button>
-      </section>
-      <section class="view-work">
-        <p class="subtitle">VIEW MY WORK</p>
-        <i class="fa fa-chevron-down fa-1.5x" aria-hidden="true"></i>
-      </section>
-    </header>
-    
-    <main>
-      <section class="projects">
-        <section class="project-one">
-          <div class="description">
-            <h2>Hippocampus Cloud Storage</h2>
-            <p>SaaS web application that provides cloud storage and organizational needs to users</p>
-            <button class="btn default">VIEW CASE STUDY</button>
-          </div>
-          <img src="images/hippo.png" alt="project screenshot">
+    <div class="container">
+      <header>
+        <section class="topnav">
+          <a class="logo">OLIVIA J MAY</a>
+          <a class="hamburger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
         </section>
-      </section>
-    </main>
 
-    <footer>
-      <p class="subtitle">LET'S GET IN TOUCH</p>
-      <ul class="icons">
-        <li>
-          <a href="mailto:ojmay92@gmail.com">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/oliviajmay">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/oliviajmay">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <div>
+        <section class="hero">
+          <h1>Hi, I'm Olivia May</h1>
+          <p class="slogan">I am a UX Designer based in San Francisco. Professionally, I create interactive experiences;  personally, I create adventurous ones.</p>
+          <button class="btn default">LET'S CHAT!</button>
+          <div class="view-work">
+            <p class="subtitle">VIEW MY WORK</p>
+            <i class="fa fa-chevron-down fa-1.5x" aria-hidden="true"></i>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="projects">
+            <div class="column">
+              <h2>Hippocampus Cloud Storage</h2>
+              <p>SaaS web application that provides cloud storage and organizational needs to users</p>
+              <button class="btn default">VIEW CASE STUDY</button>
+            </div>
+            <div class="column">
+              <img src="images/hippo.png" alt="project snapshot" class="responsive-img">
+            </div>
+        </section>
+      </main>
+
+      <footer>
+        <p class="subtitle">LET'S GET IN TOUCH</p>
+        <ul class="icons">
+          <li>
+            <a href="mailto:ojmay92@gmail.com">
+              <img src="images/email.png" alt="email address">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/oliviajmay">
+              <img src="images/linkedin.png" alt="linkedin">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/oliviajmay">
+              <img src="images/github.png" alt="github">
+            </a>
+          </li>
+        </ul>
+        <div class="trademark">
           <img src="images/logo-small.png" class="logo-icon" alt="small logo icon">
-          <p class="designed-by">Designed by Olivia May</p>
+          <a class="designed-by">Designed by Olivia May</a>
         </div>
-    </footer>
+      </footer>
+    <div>
   </body>
 </html>
