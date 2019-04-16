@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <title>Portfolio | Olivia May</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,20 +20,23 @@
   <body>
     <div class="container">
       <header>
-        <section class="topnav">
-          <a class="logo">OLIVIA J MAY</a>
-          <a class="hamburger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-        </section>
+        <nav>
+          <a href="index.html" class="logo">OLIVIA J MAY</a>
+          <a href="mailto:ojmay92@gmail.com" class="display">CONTACT</a>
+          <a href="bio.html" class="display">ABOUT</a>
+          <a href="project.html" class="display">PROJECTS</a>
+          <a href="javascript:void(0);" class="hamburger" onclick="myFunction()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+        </nav>
 
-        <section class="hero">
+        <div class="hero">
           <h1>Hi, I'm Olivia May</h1>
           <p class="slogan">I am a UX Designer based in San Francisco. Professionally, I create interactive experiences;  personally, I create adventurous ones.</p>
-          <button class="btn default">LET'S CHAT!</button>
-          <div class="view-work">
-            <p class="subtitle">VIEW MY WORK</p>
-            <i class="fa fa-chevron-down fa-1.5x" aria-hidden="true"></i>
-          </div>
-        </section>
+          <a href="mailto:ojmay92@gmail.com" class="button">LET'S CHAT!</a>
+        </div>
+        <div class="view-work">
+          <p class="subtitle">VIEW MY WORK</p>
+          <i class="fa fa-chevron-down fa-1.5x" aria-hidden="true"></i>
+        </div>
       </header>
 
       <main>
@@ -41,10 +44,10 @@
             <div class="column">
               <h2>Hippocampus Cloud Storage</h2>
               <p>SaaS web application that provides cloud storage and organizational needs to users</p>
-              <button class="btn default">VIEW CASE STUDY</button>
+              <a href="mailto:ojmay92@gmail.com" class="button">VIEW CASE STUDY</a>
             </div>
             <div class="column">
-              <img src="images/hippo.png" alt="project snapshot" class="responsive-img">
+              <a href="project.html"> <img src="images/hippo.png" alt="project snapshot" class="responsive-img"></a>
             </div>
         </section>
       </main>
@@ -73,6 +76,6 @@
           <a class="designed-by">Designed by Olivia May</a>
         </div>
       </footer>
-    <div>
+    </div>
   </body>
 </html>

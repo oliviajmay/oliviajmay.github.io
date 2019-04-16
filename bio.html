@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <title>About Me | Olivia May</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,49 +15,53 @@
   </head>
 
   <body>
-    <header>
-      <ul class="nav">
-        <li style="float:left"><a class="logo">OLIVIA J MAY</a></li>
-        <li><a>PROJECTS</a></li>
-        <li><a>ABOUT</a></li>
-        <li><a>CONTACT</a></li>
-      </ul>
-      <section class="hero">
-        <h1>A Little About Me</h1>
-        <img src="images/bio-image.png" alt="hero image">
-      </section>
-    </header>
+    <div class="container-bio">
+      <header>
+        <nav>
+          <a href="index.html" class="logo">OLIVIA J MAY</a>
+          <a href="mailto:ojmay92@gmail.com" class="display">CONTACT</a>
+          <a href="bio.html" class="display">ABOUT</a>
+          <a href="project.html" class="display">PROJECTS</a>
+          <a href="javascript:void(0);" class="hamburger" onclick="myFunction()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+        </nav>
 
-    <main>
-      <h3>SAWASDEE KHA</h3>
-      <h5>(HELLO IN THAI)</h5>
-      <p>I’m Olivia, an adventure-seeking, travel monger, and designer living in San Francisco.<br>After graduating from Drexel University with a BA in Business Administration, my future seemed daunting and unknown, so I went to the only thing I was certain about - traveling. I immersed myself in new cultures and created long-lasting friendships all around the world. I have traveled to 30 (and counting) countries including studying Latin American development in Costa Rica for 3 months and living and working at a tour company in Thailand for 2 years.<br>During my time in Thailand, I worked with clients from novice travellers to professional nomads. I was presented problems and looked at for solutions. I performed local research to help customers find accomodation, activities, and transportation, all while dealing with a language barrier. I have always had an immense amount of love and appreciation for design and that only heightened during my travels. It has allowed me to increase my level of creativity and open-mindedness through cultural immersion.<br>I wanted to find the next step in my professional career, and with my experience in solving customer-facing problems and my appreciation for design, I turned to UX design. I was able to combine my love for design and tech with my passion for research and cultural understanding. Similarly to empathizing with a culture, I empathize with the end user to create functional and aesthetically pleasing products. Eager to never stop learning from this beautiful world as I pursue my career in UX design, I am currently looking for remote roles.<br>I am excited to see where my designs take me and how my designs can influence travel and vice versa. Reach out for design collaborations or simply to swap travel stories!</p>
-      <button class="btn default">LET'S CHAT</button>
-      <button class="btn default">RESUME</button>
-    </main>
-
-    <footer>
-      <p class="subtitle">LET'S GET IN TOUCH</p>
-      <ul class="icons">
-        <li>
-          <a href="mailto:ojmay92@gmail.com">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/oliviajmay">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/oliviajmay">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <div>
-          <img src="images/logo-small.png" class="logo-icon" alt="small logo icon">
-          <p class="designed-by">Designed by Olivia May</p>
+        <div class="hero">
+          <h1 style="color:#333333">A Little About Me</h1>
         </div>
-    </footer>
+      </header>
+
+      <main>
+        <h3>SAWASDEE KHA</h3>
+        <h5>(HELLO IN THAI)</h5>
+        <p>I’m Olivia, an adventure-seeking, travel monger, and designer living in San Francisco.<br><br>After graduating from Drexel University with a BA in Business Administration, my future seemed daunting and unknown, so I went to the only thing I was certain about - traveling. I immersed myself in new cultures and created long-lasting friendships all around the world. I have traveled to 30 (and counting) countries including studying Latin American development in Costa Rica for 3 months and living and working at a tour company in Thailand for 2 years.<br><br>During my time in Thailand, I worked with clients from novice travellers to professional nomads. I was presented problems and looked at for solutions. I performed local research to help customers find accomodation, activities, and transportation, all while dealing with a language barrier. I have always had an immense amount of love and appreciation for design and that only heightened during my travels. It has allowed me to increase my level of creativity and open-mindedness through cultural immersion.<br><br>I wanted to find the next step in my professional career, and with my experience in solving customer-facing problems and my appreciation for design, I turned to UX design. I was able to combine my love for design and tech with my passion for research and cultural understanding. Similarly to empathizing with a culture, I empathize with the end user to create functional and aesthetically pleasing products. Eager to never stop learning from this beautiful world as I pursue my career in UX design, I am currently looking for remote roles.<br><br>I am excited to see where my designs take me and how my designs can influence travel and vice versa. Reach out for design collaborations or simply to swap travel stories!</p>
+        <button class="btn default">LET'S CHAT</button>
+        <button class="btn default">RESUME</button>
+      </main>
+
+      <footer>
+        <p class="subtitle">LET'S GET IN TOUCH</p>
+        <ul class="icons">
+          <li>
+            <a href="mailto:ojmay92@gmail.com">
+              <img src="images/email.png" alt="email address">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/oliviajmay">
+              <img src="images/linkedin.png" alt="linkedin">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/oliviajmay">
+              <img src="images/github.png" alt="github">
+            </a>
+          </li>
+        </ul>
+        <div class="trademark">
+          <img src="images/logo-small.png" class="logo-icon" alt="small logo icon">
+          <a class="designed-by">Designed by Olivia May</a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
