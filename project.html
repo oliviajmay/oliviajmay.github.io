@@ -14,45 +14,61 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
+   <div class="container-projects">
     <header>
-      <ul class="nav">
-        <li style="float:left"><a class="logo">OLIVIA J MAY</a></li>
-        <li><a>PROJECTS</a></li>
-        <li><a>ABOUT</a></li>
-        <li><a>CONTACT</a></li>
-      </ul>
+      <nav>
+        <h2><a href="index.html">OLIVIA J MAY</a></h2>
+        <input type="checkbox" id="nav">
+          <label for="nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        <ul class="menu">
+          <li><a href="project.html">PROJECTS</a></li>
+          <li><a href="bio.html">ABOUT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
 
-      <section class="overview">
+      <section class="overview box">
         <h1>Hippocampus</h1>
-        <p>RESEARCH | BRANDING | DESIGN</p>
-          <h5>TOOLS</h5>
-          <ul class="tools">
-            <li><a>Figma</a></li>
-            <li><a>Sketch</a></li>
-            <li><a>Invision</a></li>
-            <li><a>Adobe Illustrator</a></li>
-            <li><a>Usability Hub</a></li>
-            <li><a>Maze.io</a></li>
-          </ul>
-          <h5>DELIVERABLES</h5>
-          <ul class="deliverables">
-            <li><a>User Surveys</a></li>
-            <li><a>Competitive Analysis</a></li>
-            <li><a>User Personas</a></li>
-            <li><a>User Stories and Flows</a></li>
-            <li><a>Wireframes</a></li>
-            <li><a>Visual Mockups</a></li>
-            <li><a>Branding and Visual Identity</a></li>
-            <li><a>Prototypes</a></li>
-            <li><a>Usability Testing</a></li>
-          </ul>
-        <button class="btn default">VIEW PROTOTYPE</button>
+        <br>
+        <h6>RESEARCH | BRANDING | DESIGN</h6>
+          <div class=half>
+            <h6 class="hide-img">TOOLS</h6>
+            <ul class="hide-img">
+              <li><a>Figma</a></li>
+              <li><a>Sketch</a></li>
+              <li><a>Invision</a></li>
+              <li><a>Adobe Illustrator</a></li>
+              <li><a>Usability Hub</a></li>
+              <li><a>Maze.io</a></li>
+            </ul>
+          </div>
+          <div class=half>
+            <h6 class="hide-img">DELIVERABLES</h6>
+            <ul class="hide-img">
+              <li><a>User Surveys</a></li>
+              <li><a>Competitive Analysis</a></li>
+              <li><a>User Personas</a></li>
+              <li><a>User Stories and Flows</a></li>
+              <li><a>Wireframes</a></li>
+              <li><a>Visual Mockups</a></li>
+              <li><a>Branding and Visual Identity</a></li>
+              <li><a>Prototypes</a></li>
+              <li><a>Usability Testing</a></li>
+            </ul>
+          </div>
         <img src="images/computer-mockup.png" alt="prototype">
+        <div class="btn">
+          <a href="https://invis.io/GAQ3DSIZHED" class="button">VIEW PROTOTYPE</a>
+        </div>
       </section>
 
-        <section class="Introduction">
+        <section class="introduction box">
           <h3>Defining the Product</h3>
           <p>Hippocampus is a conceptual SaaS (software as a service) web application that provides cloud storage to users. It streamlines on providing an easy-to-use interface so that anyone can just login and start saving and organizing files in seconds.</p>
           <section class="boxes">
@@ -67,14 +83,18 @@
           </section>
         </section>
 
-        <section class="Research">
+        <section class="Research box">
           <h3>Research Process</h3>
           <section class="user-surveys">
             <h5>USER SURVEYS</h5>
-            <p>I surveyed cloud storage app users to learn more about the satisfactions and frustrations about their current cloud storage experiences.<br>With knowing that there is a huge market for cloud storage apps, I took that information and dug deeper to find out what currently lacked in their daily cloud storage usage today.  I found that although the applications shined in creating and collaborating, what they lacked was ease-of-use and better organizational features.</p>
+            <p>I surveyed cloud storage app users to learn more about the satisfactions and frustrations about their current cloud storage experiences.<br><br>With knowing that there is a huge market for cloud storage apps, I took that information and dug deeper to find out what currently lacked in their daily cloud storage usage today.  I found that although the applications shined in creating and collaborating, what they lacked was ease-of-use and better organizational features.</p>
+            <br>
             <blockquote>The apps are “confusing  to navigate, I’m sure there are 100 things I don’t know I can do or am doing wrong with cloud apps.”</blockquote>
+            <br>
             <p>The key takeaways from my initial user research via user interviews was that the new app should focus on organizational features and and easy-to-use navigational interface, yet I should include features such as creation of content and uploading and sharing options.</p>
-            <button class="btn default">VIEW SURVEY</button>
+            <div class="btn">
+              <a href="https://drive.google.com/open?id=1ig8Z85Rs95TzT18TWExPER-u6Ky4IaETj05C0Toa3eU" class="button">VIEW SURVEY</a>
+            </div
           </section>
 
           <section class="competitive-analysis">
@@ -91,14 +111,18 @@
               </li>
             </ul>
             <p>What these competitors don’t do as well and how a new competitor can stay afloat within this market is bettering the organization features. Out of Google Drive, Dropbox, or Box none of their biggest strengths were ease of use and organization. In addition, I think that the new competitor should focus on an organizational element of photos so that users can easy access and share photos in one spot.</p>
-            <button class="btn default">VIEW SWOT ANALYSIS</button>
+            <div class="btn">
+              <a href="https://drive.google.com/open?id=1NUdeoTlcNqunEIauDXzVayuyyCP6yVNq" class="button">VIEW SWOT ANALYSIS</a>
+            </div>
           </section>
 
           <section class="user-personas">
             <h5>USER PERSONAS</h5>
             <p>A common theme among these personas is that they all strive to have their files in one place and easily accessed. This showcases that organized files and an easy-to-use interface are all of utmost importance to them. Although they all use the app for different needs such as sharing, syncing, and storing all of these tasks are made easier and more efficient with better organizational features.</p>
             <img src="images/personas.png" alt="snapshot">
-            <button class="btn default">VIEW USER PERSONAS</button>
+            <div class="btn">
+              <a href="https://drive.google.com/open?id=1kH-b58JbyEZJhvuJ7q8e1C-a3EM3TQbqhZwlcuTXHoE" class="button">VIEW USER PERSONAS</a>
+            </div>
           </section>
 
           <section class="user-stories">
@@ -106,39 +130,39 @@
             <p>Now that I determined the users needs through their user stories, I created several tasks that the user would want to perform within the application. Here is a snippet of some of the important tasks:</p>
             <div class="text-box">
               <h6>HIGH PRIORITIES</h6>
-                <div class=column>
                   <ul>
                     <li><a>Signing up for an account</a></li>
                     <li><a>Sharing files with others</a></li>
                     <li><a>Logging back into an account</a></li>
-                  </ul>
-                </div>
-                <div class=column>
-                  <ul>
                     <li><a>Uploading content</a></li>
                     <li><a>Creating content</a></li>
                     <li><a>Organzing content</a></li>
                   </ul>
-                </div>
             </div>
-            <button class="btn default">VIEW USER STORIES</button>
+            <div class="btn">
+              <a href="https://drive.google.com/open?id=1kH-b58JbyEZJhvuJ7q8e1C-a3EM3TQbqhZwlcuTXHoE" class="button">VIEW USER STORIES</a>
+            </div>
           </section>
 
           <section class="user-flows">
             <h5>USER FLOWS</h5>
             <p>I created user flows on how the user could complete these tasks:</p>
-            <ol>
-              <li><a>Signing up and logging in to an account</a></li>
-              <li><a>Uploading and creating a piece of content</a></li>
-              <li><a>Organizing an item</a></li>
-              <li><a>Sharing an item</a></li>
-            </ol>
-            <img src="images/user-flows.png" alt="snapshot">
-            <button class="btn default">VIEW USER FLOWS</button>
+            <div class="text-box">
+              <ol>
+                <li><a>Signing up and logging in to an account</a></li>
+                <li><a>Uploading and creating a piece of content</a></li>
+                <li><a>Organizing an item</a></li>
+                <li><a>Sharing an item</a></li>
+              </ol>
+            </div>
+            <img src="images/user-flows.png" alt="snapshot" class="hide-img">
+            <div class="btn">
+              <a href="https://drive.google.com/open?id=1glRXgUZD9AP61u-nhOyPPI94s0MczYF0" class="button">VIEW USER FLOWS</a>
+            </div>
           </section>
         </section>
 
-        <section class="Design">
+        <section class="design box">
           <h3>Branding & Identity</h3>
           <section class="brainstorming">
             <h5>BRAINGSTORMING & SKETCHES</h5>
@@ -150,13 +174,15 @@
 
           <section class="style-guide">
             <h5>STYLE GUIDE</h5>
-            <img src="images/icons.png" alt="snapshot">
             <img src="images/colors.png" alt="snapshot">
-            <button class="btn default">VIEW FULL STYLE GUIDE</button>
+            <img src="images/icons.png" alt="snapshot" class="hide-img">
+            <div class="btn">
+              <a href="https://drive.google.com/open?id=1glRXgUZD9AP61u-nhOyPPI94s0MczYF0" class="button">VIEW STYLE </a>
+            </div>
           </section>
         </section>
 
-        <section class="Visual">
+        <section class="visual box">
           <h3>Branding & Identity</h3>
           <section class="wireframes">
             <h5>WIREFRAMES & LOW-FIDELITY MOCKUPS</h5>
@@ -164,7 +190,9 @@
             <img src="images/wireframe1.jpg" alt="snapshot">
             <img src="images/wireframe2.jpg" alt="snapshot">
             <img src="images/wireframe3.jpg" alt="snapshot">
-            <button class="btn default">VIEW LO-FI MOCKUPS</button>
+            <div class="btn">
+              <a href="https://drive.google.com/open?id=1glRXgUZD9AP61u-nhOyPPI94s0MczYF0" class="button">VIEW LO-FI MOCKUPS</a>
+            </div>
           </section>
 
           <section class="user-testing">
@@ -176,6 +204,7 @@
                 <li><a>Reduce the time it took to create an account</a></li>
                 <li><a>Confused by the button  “add” a piece of content</a></li>
               </ul>
+              <br>
               <h6>SOLUTIONS</h6>
               <ul>
                 <li><a>Remove security questions screen</a></li>
@@ -209,49 +238,79 @@
             <h5>FINAL PROTOTYPE</h5>
             <p>I refined my high-fidelity mockups to create the final prototype of the web application.</p>
             <img src="images/prototype.png" alt="snapshot">
-            <button class="btn default">VIEW FINAL PROTOTYPE</button>
+            <div class="btn">
+              <a href="https://drive.google.com/open?id=1glRXgUZD9AP61u-nhOyPPI94s0MczYF0" class="button">VIEW FINAL PROTOTYPE</a>
+            </div>
           </section>
 
           <section class="conclusion">
             <h5>CONCLUSION</h5>
             <p>The Hippocampus design process had both triumphs and tribulations. I learned a lot during the process.</p>
             <div class="text-box">
-              <strong>Test early and often!</strong>
+              <strong><p>Test early and often!<p></strong>
               <p>So many changes came from just two usability tests and one preference test</p>
-              <strong>Keep it simple</strong>
+              <br>
+              <strong><p>Keep it simple</p></strong>
               <p>Flashy designs aren’t always preferred or easiest to recognize</p>
-              <strong>Keep your opinions in check</strong>
-              <p>Users opinions matter more than your initial assumptions</p>
-              <strong>Be organized!</strong>
+              <br>
+              <strong><p>Keep your opinions in check</p></strong>
+              <p>Users opinions matter more than your initial assumptions</p><br>
+              <strong><p>Be organized!</p></strong>
               <p>Remember to document all work along the way</p>
             </div>
           </section>
         </section>
     </main>
 
-    <footer>
+    <footer id="contact">
       <p class="subtitle">LET'S GET IN TOUCH</p>
       <ul class="icons">
         <li>
-          <a href="mailto:ojmay92@gmail.com">
-            <img src="images/email.png" alt="email address">
-          </a>
+          <a href="mailto:ojmay92@gmail.com" class="fa fa-envelope"></a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/oliviajmay">
-            <img src="images/linkedin.png" alt="linkedin">
-          </a>
+          <a href="https://www.linkedin.com/in/oliviajmay" class="fa fa-linkedin"></a>
         </li>
         <li>
-          <a href="https://github.com/oliviajmay">
-            <img src="images/github.png" alt="github">
-          </a>
+          <a href="https://github.com/oliviajmay" class="fa fa-github"></a>
         </li>
       </ul>
+      <hr>
       <div class="trademark">
         <img src="images/logo-small.png" class="logo-icon" alt="small logo icon">
-        <a class="designed-by">Designed by Olivia May</a>
+        <a class="designed-by">Designed & developed by Olivia May</a>
       </div>
     </footer>
+   </div>
+
+   <!-- JavaScript-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+   $(document).ready(function(){
+     // Add smooth scrolling to all links
+     $("a").on('click', function(event) {
+
+       // Make sure this.hash has a value before overriding default behavior
+       if (this.hash !== "") {
+         // Prevent default anchor click behavior
+         event.preventDefault();
+
+         // Store hash
+         var hash = this.hash;
+
+         // Using jQuery's animate() method to add smooth page scroll
+         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+         $('html, body').animate({
+           scrollTop: $(hash).offset().top -120
+         }, 1000, function(){
+
+           // Add hash (#) to URL when done scrolling (default click behavior)
+           window.location.hash = hash;
+         });
+       } // End if
+     });
+   });
+   </script>
+
   </body>
 </html>

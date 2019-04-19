@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Philosopher" />
 
     <!-- Font Awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/main.css">
@@ -21,30 +21,38 @@
     <div class="container">
       <header>
         <nav>
-          <a href="index.html" class="logo">OLIVIA J MAY</a>
-          <a href="mailto:ojmay92@gmail.com" class="display">CONTACT</a>
-          <a href="bio.html" class="display">ABOUT</a>
-          <a href="project.html" class="display">PROJECTS</a>
-          <a href="javascript:void(0);" class="hamburger" onclick="myFunction()"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+          <h2><a href="index.html">OLIVIA J MAY</a></h2>
+          <input type="checkbox" id="nav">
+            <label for="nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          <ul class="menu">
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="bio.html">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
         </nav>
 
         <div class="hero">
-          <h1>Hi, I'm Olivia May</h1>
+          <h1>Hi, I'm<br>Olivia May</h1>
           <p class="slogan">I am a UX Designer based in San Francisco. Professionally, I create interactive experiences;  personally, I create adventurous ones.</p>
-          <a href="mailto:ojmay92@gmail.com" class="button">LET'S CHAT!</a>
-        </div>
-        <div class="view-work">
-          <p class="subtitle">VIEW MY WORK</p>
-          <i class="fa fa-chevron-down fa-1.5x" aria-hidden="true"></i>
+          <div class="btn">
+            <a href="mailto:ojmay92@gmail.com" class="button">LET'S CHAT!</a>
+          </div>
+          <a href="#projects" class="scroll-down" address="true"></a>
         </div>
       </header>
 
       <main>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="column">
               <h2>Hippocampus Cloud Storage</h2>
               <p>SaaS web application that provides cloud storage and organizational needs to users</p>
-              <a href="mailto:ojmay92@gmail.com" class="button">VIEW CASE STUDY</a>
+              <div class="btn">
+                <a href="project.html" class="button">VIEW CASE STUDY</a>
+              </div>
             </div>
             <div class="column">
               <a href="project.html"> <img src="images/hippo.png" alt="project snapshot" class="responsive-img"></a>
@@ -52,30 +60,55 @@
         </section>
       </main>
 
-      <footer>
+      <footer id="contact">
         <p class="subtitle">LET'S GET IN TOUCH</p>
         <ul class="icons">
           <li>
-            <a href="mailto:ojmay92@gmail.com">
-              <img src="images/email.png" alt="email address">
-            </a>
+            <a href="mailto:ojmay92@gmail.com" class="fa fa-envelope"></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/oliviajmay">
-              <img src="images/linkedin.png" alt="linkedin">
-            </a>
+            <a href="https://www.linkedin.com/in/oliviajmay" class="fa fa-linkedin"></a>
           </li>
           <li>
-            <a href="https://github.com/oliviajmay">
-              <img src="images/github.png" alt="github">
-            </a>
+            <a href="https://github.com/oliviajmay" class="fa fa-github"></a>
           </li>
         </ul>
+        <hr>
         <div class="trademark">
           <img src="images/logo-small.png" class="logo-icon" alt="small logo icon">
-          <a class="designed-by">Designed by Olivia May</a>
+          <a class="designed-by">Designed & developed by Olivia May</a>
         </div>
       </footer>
     </div>
+
+    <!-- JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top -110
+          }, 1000, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
   </body>
 </html>
