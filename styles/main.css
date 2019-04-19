@@ -31,14 +31,14 @@ h2 {
 
 h3 {
   color: #306094;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 2.4rem;
   font-weight: normal;
 }
 
 h5 {
   color: #306094;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 1.4rem;
   font-weight: normal;
 }
@@ -255,7 +255,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   border-radius: 5px;
   background-color: white;
   color: #306094;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-size: 1.8rem;
   padding: 1.5rem 1rem;
   text-decoration: none;
@@ -481,7 +481,7 @@ footer p {
 .overview img {
   height: auto;
   margin-bottom: -4rem;
-  margin-top: -5rem;
+  margin-top: -8rem;
 }
 
 .container-projects .btn {
