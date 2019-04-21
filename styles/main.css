@@ -49,7 +49,7 @@ ul{
 
 .container header {
   background: url(../images/hero-image.jpg) center/cover;
-  height: 72rem;
+  height: 720px;
 }
 
 .container-bio header {
@@ -57,7 +57,7 @@ ul{
   background-repeat:no-repeat;
   background-size:cover;
   background-position: right;
-  height: 60rem;
+  height: 600px;
 }
 
 .container {
@@ -76,7 +76,7 @@ ul{
 nav {
   position: fixed;
   top: 0;
-  padding: 2rem;
+  padding: 20px;
   width: 100%;
   background: white;
   z-index: 100;
@@ -85,7 +85,7 @@ nav {
 nav h2 {
   display: inline;
   color: #333333;
-  font-size: 2.4rem;
+  font-size: 24px;
   font-weight: lighter;
   padding-left: 2rem;
 }
@@ -101,8 +101,8 @@ nav h2 {
 
 .menu li {
   display: inline;
-  margin-left: 3rem;
-  padding-right: 3rem;
+  margin-left: 30px;
+  padding-right: 2rem;
   cursor: pointer;
 }
 
@@ -117,7 +117,7 @@ h2 a:hover {
 
 .menu a {
     color: #333333;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: lighter;
     text-decoration: none;
 }
@@ -199,7 +199,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 5r0px;
     top: -500vh;
     left: 0;
     height: 50vh;
@@ -209,7 +209,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   }
 
   .menu li {
-    margin: 2.5rem;
+    margin: 25px;
   }
 
   .menu li:nth-child(1)::before {
@@ -225,7 +225,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   }
 
   .menu a{
-    font-size: 1.8rem;
+    font-size: 18px;
     color: #333333;
   }
 
@@ -240,14 +240,14 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   margin-left: 10%;
   margin-right: 10%;
   box-sizing:border-box;
-  padding-top: 15rem;
+  padding-top: 150px;
 }
 
 .slogan {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: bold;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .button {
@@ -256,8 +256,8 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   background-color: white;
   color: #306094;
   font-family: 'Montserrat';
-  font-size: 1.8rem;
-  padding: 1.5rem 1rem;
+  font-size: 18px;
+  padding: 15px 10px;
   text-decoration: none;
 }
 
@@ -269,8 +269,8 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 }
 
 .btn {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 
@@ -356,14 +356,18 @@ main {
 .column p {
   font-size: 1.8rem;
   padding-top: 1rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .responsive-img {
   float: right;
   max-width: 600px;
   width: 100%;
-  padding-top: 15%;
+  padding-top: 1rem;
+}
+
+.container-bio h2 {
+  color: #333333;
 }
 
 .greeting {
@@ -372,7 +376,7 @@ main {
 
 .biography {
   padding-bottom: 3rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .container-bio .btn {
@@ -439,20 +443,6 @@ footer p {
   padding-left: 1rem;
 }
 
-@media screen and (min-width: 800px) {
-
-  .column {
-    width: 50%;
-  }
-
-  .responsive-img {
-    padding-left: 10%;
-    padding-top: 0;
-  }
-}
-
-
-
 
 /* Projects */
 
@@ -481,7 +471,7 @@ footer p {
 .overview img {
   height: auto;
   margin-bottom: -4rem;
-  margin-top: -8rem;
+  margin-top: -6rem;
 }
 
 .container-projects .btn {
@@ -508,7 +498,7 @@ footer p {
 .box h5 {
   color: #333333;
   font-size: 1.8rem;
-  padding: 2rem 0 1rem 0;
+  padding: 3rem 0 1rem 0;
   }
 
 .introduction h5 {
@@ -517,11 +507,15 @@ footer p {
 
 .box h6 {
   color: #306094;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-family: Montserrat;
   font-weight: normal;
-  padding-bottom: .5rem;
+  padding-bottom: 5px;
   }
+
+.hide-img li a {
+  font-size: 12px;
+}
 
   li a {
     font-size: 1.2rem;
@@ -572,4 +566,40 @@ footer p {
 
   .hide-img {
     display: none;
+  }
+
+
+
+  @media screen and (min-width: 768px) {
+    html{
+      font-size:14px;
+    }
+    .column {
+      width: 50%;
+      display: inline-block;
+    }
+    .responsive-img {
+      padding-left: 15%;
+      padding-top: 0;
+    }
+    .hide-img {
+      display: inline;
+    }
+    .box img {
+      width:50%;
+      text-align: center;
+      display: inline-block;
+    }
+    .full img {
+      width:100%;
+    }
+    .table{
+      display:table;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .slogan {
+      width: 60%;
+    }
   }
