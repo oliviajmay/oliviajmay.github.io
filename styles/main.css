@@ -605,4 +605,16 @@ footer p {
     .slogan {
       width: 50%;
     }
+    .container-bio main {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    .container-projects main {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    blockquote {
+      margin-left: 15%;
+      margin-right: 15%;
+    }
   }
