@@ -20,6 +20,7 @@ h1 {
   font-family: Philosopher;
   font-size: 5.6rem;
   font-weight: bold;
+  line-height: 1;
 }
 
 h2 {
@@ -48,8 +49,11 @@ ul{
 }
 
 .container header {
-  background: url(../images/hero-image.jpg) center/cover;
-  height: 720px;
+  background: url(../images/hero-image.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
 }
 
 .container-bio header {
@@ -57,7 +61,8 @@ ul{
   background-repeat:no-repeat;
   background-size:cover;
   background-position: right;
-  height: 600px;
+  height: 75vh;
+  display: flex;
 }
 
 .container {
@@ -78,7 +83,7 @@ nav {
   top: 0;
   padding: 20px;
   width: 100%;
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
   z-index: 100;
 }
 
@@ -151,9 +156,8 @@ nav label {
   display: none;
   top: 0;
   right: 0;
-  height: 60px;
+  height: 50px;
   width: 70px;
-  background: white;
   cursor: pointer;
   z-index: 2;
 }
@@ -199,7 +203,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5r0px;
+    margin-top: -5px;
     top: -500vh;
     left: 0;
     height: 50vh;
@@ -213,15 +217,15 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   }
 
   .menu li:nth-child(1)::before {
-    bottom: 232px;
+    bottom: 230px;
   }
 
   .menu li:nth-child(2)::before {
-    bottom: 160px;
+    bottom: 164px;
   }
 
   .menu li:nth-child(3)::before {
-    bottom: 86px;
+    bottom: 95px;
   }
 
   .menu a{
@@ -237,11 +241,11 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
 /* end nav bar */
 
 .hero {
-  margin-left: 10%;
-  margin-right: 10%;
   box-sizing:border-box;
-  padding-top: 150px;
+  margin: auto 10% auto 10%;
 }
+
+
 
 .slogan {
   font-size: 2rem;
@@ -257,7 +261,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   color: #306094;
   font-family: 'Montserrat';
   font-size: 18px;
-  padding: 15px 10px;
+  padding: 15px 25px;
   text-decoration: none;
 }
 
@@ -266,6 +270,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   background-color: #306094;
   opacity: .7;
   color: white;
+  transition: 0.5s;
 }
 
 .btn {
@@ -283,7 +288,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
   display: block;
   width: 32px;
   height: 32px;
-  border: 2px solid #FFF;
+  border: 2px solid #306094;
   background-size: 14px auto;
   border-radius: 50%;
   z-index: 2;
@@ -303,7 +308,7 @@ input[type=checkbox]:checked ~ label span:nth-child(3) {
     width: 12px;
     height: 12px;
     content: "";
-    border: 2px solid white;
+    border: 2px solid #306094;
     border-width: 0px 0 2px 2px;
 }
 
@@ -334,10 +339,32 @@ main {
   margin: 10%;
 }
 
+.container-bio main{
+  max-width: 710px;
+  margin: 5% auto;
+  padding: 2rem;
+}
+
 .column {
   float: left;
   width: 100%;
-  padding-top: 3rem;
+  padding: 0 .5rem 0 .5rem;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column h5 {
+  text-align: center;
+  margin-bottom: -2rem;
 }
 
 #projects {
@@ -366,7 +393,7 @@ main {
 }
 
 .container-bio h2 {
-  color: #333333;
+  color: #ffffff;
 }
 
 .greeting {
@@ -438,6 +465,10 @@ footer p {
   padding-top: 2rem;
 }
 
+.logo-icon {
+  max-width: 50px;
+}
+
 .designed-by {
   padding-left: 1rem;
 }
@@ -453,6 +484,8 @@ footer p {
 
 .box {
   padding-top: 5rem;
+  max-width: 800px;
+  margin: auto;
 }
 
 .half {
@@ -460,10 +493,6 @@ footer p {
   padding: 2rem 2rem 0 0;
   float: left;
   vertical-align: top;
-}
-
-.last {
-  padding-bottom: 3rem;
 }
 
 .box img {
@@ -485,7 +514,7 @@ footer p {
 .container-projects .button {
   border: 1px solid #306094;
   font-size: 1.4rem;
-  padding: 1rem .5rem;
+  padding: 15px 25px;
 }
 
 .box h1 {
@@ -495,6 +524,9 @@ footer p {
 .box h3 {
     font-family: Philosopher;
     font-size: 3rem;
+  }
+
+  .fix{
     padding-bottom: 2rem;
   }
 
@@ -525,9 +557,16 @@ footer p {
   }
 
   .text-box {
-    background-color: #E5E5E5;
     margin-top: 2rem;
     padding: 2rem 3rem 2rem 3rem;
+  }
+
+  .solid {
+    background: #E3EAF2;
+  }
+
+  .text-box li:nth-of-type(odd) {
+    background: #E3EAF2;
   }
 
   .text-box li {
@@ -538,33 +577,46 @@ footer p {
     padding-left: 1.5rem;
   }
 
+  blockquote::before{
+    content: "\201C";
+    position: absolute;
+    font-size: 40rem;
+    left: -2rem;
+    top: -8rem;;
+    line-height: 1;
+    z-index: -1;
+    color: #E3EAF2;
+  }
+
+  blockquote::after{
+    content: "\201D";
+    position: absolute;
+    font-size: 40rem;
+    right: -2rem;
+    bottom: -25rem;
+    line-height: 1;
+    z-index: -1;
+    color: #E3EAF2;
+  }
+
   blockquote {
-    font-size: 1.8rem;
+    font-size: 2.7rem;
     font-family: Philosopher;
     color: #306094;
-    margin-left: 1rem;
-    margin-right: 1rem;
     text-align: center;
-    line-height: 150%;
-  }
-
-  .logos {
-    text-align: center;
-  }
-
-  .logos img {
-    width: 50px;
-    height: 100%;
-    max-width:150px;
-  }
-
-  .logos li{
-    display:inline-block;
-    padding: 0 1rem 2rem 1rem;
+    line-height: 1;
+    margin: 3rem auto;
+    width: 85%;
+    position: relative;
   }
 
   .conclusion {
     padding-bottom: 30px;
+  }
+
+  .bold {
+    font-size: 1.6rem;
+    font-weight: bold;
   }
 
   .hide-img {
@@ -576,10 +628,14 @@ footer p {
     html{
       font-size:14px;
     }
+    .slogan {
+      max-width: 570px;
+    }
     .column {
       width: 50%;
       display: inline-block;
     }
+
     .responsive-img {
       padding-left: 15%;
       padding-top: 0;
@@ -592,6 +648,7 @@ footer p {
       height: auto;
       display: inline-block;
     }
+
     .full img {
       width:95%;
       padding-left: 5%;
@@ -602,20 +659,12 @@ footer p {
   }
 
   @media screen and (min-width: 1024px) {
-    .slogan {
-      width: 50%;
-    }
-    .container-bio main {
-      margin-left: 15%;
-      margin-right: 15%;
-    }
     .container-projects main {
       margin-left: 15%;
       margin-right: 15%;
     }
     blockquote {
-      margin-left: 15%;
-      margin-right: 15%;
+      font-size: 3rem;
     }
     .text-box {
       margin-left: 5%;
